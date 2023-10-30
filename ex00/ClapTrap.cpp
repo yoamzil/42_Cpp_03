@@ -17,19 +17,33 @@
 #include "ClapTrap.hpp"
 
 ClapTrap::ClapTrap()
-{}
+{
+	std::cout << "Default constructor called" << std::endl;
+}
 
 ClapTrap::~ClapTrap()
-{}
-
-ClapTrap::ClapTrap(ClapTrap const &original)
-{}
-
-ClapTrap    &ClapTrap::operator=(ClapTrap const &original)
-{}
+{
+	std::cout << "Destructor called" << std::endl;
+}
 
 ClapTrap::ClapTrap(std::string NAME)
-{}
+{
+	name = NAME;
+}
+
+ClapTrap::ClapTrap(ClapTrap const &original)
+{
+	std::cout << "Copy constructor called" << std::endl;
+	*this = original;
+}
+
+ClapTrap    &ClapTrap::operator=(ClapTrap const &original)
+{
+	this->name = original.name;
+	this->hitPoints = original.hitPoints;
+	this->energyPoints = original.energyPoints;
+	this->attackDamage = original.attackDamage;
+}
 
 void    ClapTrap::attack(const std::string &target)
 {}
