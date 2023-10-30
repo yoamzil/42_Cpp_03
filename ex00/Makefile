@@ -1,9 +1,9 @@
 CXX			=	c++
 CXXFLAGS	=	-Wall -Werror -Wextra -std=c++98
 NAME		=	fixed
-SRCS		=	main.cpp Fixed.cpp
+SRCS		=	main.cpp ClapTrap.cpp
 OBJS		=	$(SRCS:.cpp=.o)
-HFS			=	Fixed.hpp
+HFS			=	ClapTrap.hpp
 
 %.o			:	%.cpp $(HFS)
 				$(CXX) $(CXXFLAGS) -c $< -o $@
