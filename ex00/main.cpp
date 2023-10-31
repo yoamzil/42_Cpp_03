@@ -17,4 +17,16 @@
 #include "ClapTrap.hpp"
 
 int main(void)
-{}
+{
+	ClapTrap a;
+	ClapTrap b("Hmad");
+	ClapTrap c = b;
+	
+	std::cout << std::endl;
+	std::cout << "a's name is: " << a.getName() << ", his hit points: " << a.getHit() << ", his energy points: " << a.getEnergy() << ", his attack damage: " << a.getAttack() << std::endl;
+	std::cout << "b's name is: " << b.getName() << ", his hit points: " << b.getHit() << ", his energy points: " << b.getEnergy() << ", his attack damage: " << b.getAttack() << std::endl;
+	std::cout << "c's name is: " << c.getName() << ", his hit points: " << c.getHit() << ", his energy points: " << c.getEnergy() << ", his attack damage: " << c.getAttack() << std::endl
+			  << std::endl;
+
+	b.attack("c");
+}
