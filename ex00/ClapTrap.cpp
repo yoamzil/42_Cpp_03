@@ -103,7 +103,7 @@ void	ClapTrap::beRepaired(unsigned int amount)
 {
 	if (hitPoints >= 0 || energyPoints >= 0)
 	{
-		std::cout << "ClapTrap " << name << " repairs itself and gets " << amount << " hit points back." << std::endl;
+		std::cout << "ClapTrap " << name << " repairs himself and gets " << amount << " hit points back." << std::endl;
 		hitPoints += amount;
 		energyPoints--;
 	}
