@@ -38,7 +38,7 @@ int		ClapTrap::getAttack()
 
 ClapTrap::ClapTrap()
 {
-	std::cout << "Default constructor called" << std::endl;
+	std::cout << "ClapTrap default constructor called" << std::endl;
 	name = "NO NAME FOUND!";
 	hitPoints = 10;
 	energyPoints = 10;
@@ -47,12 +47,12 @@ ClapTrap::ClapTrap()
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "Destructor called" << std::endl;
+	std::cout << "ClapTrap destructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string NAME)
 {
-	std::cout << "Parameterized constructor called" << std::endl;
+	std::cout << "ClapTrap parameterized constructor called" << std::endl;
 	name = NAME;
 	hitPoints = 10;
 	energyPoints = 10;
@@ -61,7 +61,7 @@ ClapTrap::ClapTrap(std::string NAME)
 
 ClapTrap::ClapTrap(ClapTrap const &original)
 {
-	std::cout << "Copy constructor called" << std::endl;
+	std::cout << "ClapTrap copy constructor called" << std::endl;
 	*this = original;
 }
 

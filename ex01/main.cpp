@@ -15,22 +15,29 @@
 /* ************************************************************************************** */
 
 #include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main(void)
 {
-	ClapTrap a("Hmad");
+	// ClapTrap a("Hmad");
 
-	std::cout << std::endl;
-	std::cout << "a's name is: " << a.getName() << ", his hit points: " << a.getHit() << ", his energy points: " << a.getEnergy() << ", his attack damage: " << a.getAttack() << std::endl
-			  << std::endl;
+	// std::cout << std::endl;
+	// std::cout << "a's name is: " << a.getName() << ", his hit points: " << a.getHit() << ", his energy points: " << a.getEnergy() << ", his attack damage: " << a.getAttack() << std::endl
+	// 		  << std::endl;
 
-	a.attack("Ali");
-	std::cout << "a's name is: " << a.getName() << ", his hit points: " << a.getHit() << ", his energy points: " << a.getEnergy() << ", his attack damage: " << a.getAttack() << std::endl
-			  << std::endl;
-	a.takeDamage(5);
-	std::cout << "a's name is: " << a.getName() << ", his hit points: " << a.getHit() << ", his energy points: " << a.getEnergy() << ", his attack damage: " << a.getAttack() << std::endl
-			  << std::endl;
-	a.beRepaired(2);
-	std::cout << "a's name is: " << a.getName() << ", his hit points: " << a.getHit() << ", his energy points: " << a.getEnergy() << ", his attack damage: " << a.getAttack() << std::endl
-			  << std::endl;
+	// a.attack("Ali");
+	// std::cout << "a's name is: " << a.getName() << ", his hit points: " << a.getHit() << ", his energy points: " << a.getEnergy() << ", his attack damage: " << a.getAttack() << std::endl
+	// 		  << std::endl;
+	// a.takeDamage(5);
+	// std::cout << "a's name is: " << a.getName() << ", his hit points: " << a.getHit() << ", his energy points: " << a.getEnergy() << ", his attack damage: " << a.getAttack() << std::endl
+	// 		  << std::endl;
+	// a.beRepaired(2);
+	// std::cout << "a's name is: " << a.getName() << ", his hit points: " << a.getHit() << ", his energy points: " << a.getEnergy() << ", his attack damage: " << a.getAttack() << std::endl
+	// 		  << std::endl;
+
+	ClapTrap	a;
+	ScavTrap	b;
+
+
+	return (0);
 }

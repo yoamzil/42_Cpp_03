@@ -1,9 +1,9 @@
 CXX			=	c++
 CXXFLAGS	=	-Wall -Werror -Wextra -std=c++98
 NAME		=	ClapTrap
-SRCS		=	main.cpp ClapTrap.cpp
+SRCS		=	main.cpp ClapTrap.cpp ScavTrap.cpp
 OBJS		=	$(SRCS:.cpp=.o)
-HFS			=	ClapTrap.hpp
+HFS			=	ClapTrap.hpp ScavTrap.hpp
 
 %.o			:	%.cpp $(HFS)
 				$(CXX) $(CXXFLAGS) -c $< -o $@

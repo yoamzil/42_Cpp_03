@@ -13,3 +13,11 @@
 /*		"Y88P"									By: yoamzil <yoamzil@student.1337.ma>     */
 /*																						  */
 /* ************************************************************************************** */
+
+#include "ScavTrap.hpp"
+#include "ClapTrap.hpp"
+
+// ScavTrap::ScavTrap(std::string Name) : ClapTrap(Name)
+// {
+//     std::cout << "ScavTrap parameterized constructor called" << std::endl;
+// }
