@@ -28,7 +28,7 @@ int main(void)
 	a.attack("Ali");
 	std::cout << "Name: " << a.getName() << ". Hit points: " << a.getHit() << ". Energy points: " << a.getEnergy() << ". Attack damage: " << a.getAttack() << std::endl
 			  << std::endl;
-	a.takeDamage(5);
+	a.takeDamage(4);
 	std::cout << "Name: " << a.getName() << ". Hit points: " << a.getHit() << ". Energy points: " << a.getEnergy() << ". Attack damage: " << a.getAttack() << std::endl
 			  << std::endl;
 	a.beRepaired(2);
@@ -51,7 +51,8 @@ int main(void)
 	std::cout << "Name: " << b.getName() << ". Hit points: " << b.getHit() << ". Energy points: " << b.getEnergy() << ". Attack damage: " << a.getAttack() << std::endl
 			  << std::endl;
 	//=========================================================================================================================
-
+	
+	b.guardGate();
 	// ClapTrap *test = new ScavTrap;
 	// delete test;
 

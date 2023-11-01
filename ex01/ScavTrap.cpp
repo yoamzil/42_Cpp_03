@@ -46,7 +46,7 @@ ScavTrap::ScavTrap(ScavTrap const &original)
     *this = original;
 }
 
-ScavTrap    &ScavTrap::operator=(ScavTrap const &original)
+ScavTrap &ScavTrap::operator=(ScavTrap const &original)
 {
     if (this != &original)
     {
@@ -58,13 +58,19 @@ ScavTrap    &ScavTrap::operator=(ScavTrap const &original)
     return (*this);
 }
 
-void	ScavTrap::attack(const std::string &target)
+void ScavTrap::attack(const std::string &target)
 {
-	if (hitPoints >= 0 || energyPoints >= 0)
-	{
-		std::cout << "ScavTrap " << name << " attacks " << target << ", causing " << attackDamage << " points of damage!" << std::endl;
-		energyPoints--;
-	}
-	else
-		std::cout << "Not enough points to attack!" << std::endl;
+    if (hitPoints >= 0 || energyPoints >= 0)
+    {
+        std::cout << "ScavTrap " << name << " attacks " << target << ", causing " << attackDamage << " points of damage!" << std::endl;
+        energyPoints--;
+    }
+    else
+        std::cout << "Not enough points to attack!" << std::endl;
+}
+
+void ScavTrap::guardGate()
+{
+    std::cout << "ScavTrap " << name << " is now in Gate keeper mode" << std::endl
+              << std::endl;
 }
