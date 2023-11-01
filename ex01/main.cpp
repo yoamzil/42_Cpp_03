@@ -19,25 +19,41 @@
 
 int main(void)
 {
-	// ClapTrap a("Hmad");
+	ClapTrap a("Hmad");
 
-	// std::cout << std::endl;
-	// std::cout << "a's name is: " << a.getName() << ", his hit points: " << a.getHit() << ", his energy points: " << a.getEnergy() << ", his attack damage: " << a.getAttack() << std::endl
-	// 		  << std::endl;
+	std::cout << std::endl;
+	std::cout << "Name: " << a.getName() << ". Hit points: " << a.getHit() << ". Energy points: " << a.getEnergy() << ". Attack damage: " << a.getAttack() << std::endl
+			  << std::endl;
 
-	// a.attack("Ali");
-	// std::cout << "a's name is: " << a.getName() << ", his hit points: " << a.getHit() << ", his energy points: " << a.getEnergy() << ", his attack damage: " << a.getAttack() << std::endl
-	// 		  << std::endl;
-	// a.takeDamage(5);
-	// std::cout << "a's name is: " << a.getName() << ", his hit points: " << a.getHit() << ", his energy points: " << a.getEnergy() << ", his attack damage: " << a.getAttack() << std::endl
-	// 		  << std::endl;
-	// a.beRepaired(2);
-	// std::cout << "a's name is: " << a.getName() << ", his hit points: " << a.getHit() << ", his energy points: " << a.getEnergy() << ", his attack damage: " << a.getAttack() << std::endl
-	// 		  << std::endl;
+	a.attack("Ali");
+	std::cout << "Name: " << a.getName() << ". Hit points: " << a.getHit() << ". Energy points: " << a.getEnergy() << ". Attack damage: " << a.getAttack() << std::endl
+			  << std::endl;
+	a.takeDamage(5);
+	std::cout << "Name: " << a.getName() << ". Hit points: " << a.getHit() << ". Energy points: " << a.getEnergy() << ". Attack damage: " << a.getAttack() << std::endl
+			  << std::endl;
+	a.beRepaired(2);
+	std::cout << "Name: " << a.getName() << ". Hit points: " << a.getHit() << ". Energy points: " << a.getEnergy() << ". Attack damage: " << a.getAttack() << std::endl
+			  << std::endl;
+	//=========================================================================================================================
+	ScavTrap b("Hassan");
 
-	ClapTrap	a;
-	ScavTrap	b;
+	std::cout << std::endl;
+	std::cout << "Name: " << b.getName() << ". Hit points: " << b.getHit() << ". Energy points: " << b.getEnergy() << ". Attack damage: " << b.getAttack() << std::endl
+			  << std::endl;
 
+	b.attack("Mohmmad");
+	std::cout << "Name: " << b.getName() << ". Hit points: " << b.getHit() << ". Energy points: " << b.getEnergy() << ". Attack damage: " << b.getAttack() << std::endl
+			  << std::endl;
+	b.takeDamage(75);
+	std::cout << "Name: " << b.getName() << ". Hit points: " << b.getHit() << ". Energy points: " << b.getEnergy() << ". Attack damage: " << b.getAttack() << std::endl
+			  << std::endl;
+	b.beRepaired(20);
+	std::cout << "Name: " << b.getName() << ". Hit points: " << b.getHit() << ". Energy points: " << b.getEnergy() << ". Attack damage: " << a.getAttack() << std::endl
+			  << std::endl;
+	//=========================================================================================================================
+
+	// ClapTrap *test = new ScavTrap;
+	// delete test;
 
 	return (0);
 }

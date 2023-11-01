@@ -24,15 +24,14 @@ class   ScavTrap : public ClapTrap
     private:
 
     public:
-        ScavTrap() : ClapTrap(){}
-        // ScavTrap(std::string Name) : ClapTrap(Name)
-        // {
-        //     // std::cout << "ScavTrap parameterized constructor called" << std::endl;
-        // }
-        ~ScavTrap()
-        {
-            // std::cout << "ScavTrap destructor called" << std::endl;
-        }
+        ScavTrap();
+        ~ScavTrap();
+        ScavTrap(ScavTrap const &original);
+        ScavTrap    &operator=(ScavTrap const &original);
+    
+        ScavTrap(std::string Name);
+
+        void attack(const std::string &target);
 };
 
 #endif
