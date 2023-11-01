@@ -48,7 +48,7 @@ int main(void)
 	std::cout << "Name: " << b.getName() << ". Hit points: " << b.getHit() << ". Energy points: " << b.getEnergy() << ". Attack damage: " << b.getAttack() << std::endl
 			  << std::endl;
 	b.beRepaired(20);
-	std::cout << "Name: " << b.getName() << ". Hit points: " << b.getHit() << ". Energy points: " << b.getEnergy() << ". Attack damage: " << a.getAttack() << std::endl
+	std::cout << "Name: " << b.getName() << ". Hit points: " << b.getHit() << ". Energy points: " << b.getEnergy() << ". Attack damage: " << b.getAttack() << std::endl
 			  << std::endl;
 	//=========================================================================================================================
 	
